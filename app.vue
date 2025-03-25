@@ -63,5 +63,4 @@ const configuration = ref({
   searchClient: client,
 })
 const { getInstance } = useInstantSearch()
-console.log(getInstance())
 </script>

@@ -18,5 +18,12 @@
   "dependencies": {
     "@babel/runtime": "^7.26.9",
     "typesense-instantsearch-adapter": "^2.8.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "typesense-instantsearch-adapter"
+    ]
   }
 }
