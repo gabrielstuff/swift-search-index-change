@@ -7,6 +7,13 @@
   <AisInstantSearch :widgets :configuration>
     <AisSearchBox placeholder="Search..." autofocus />
     <AisIndex :index="currentIndex">
+      <AisHits>
+        <template #default="{ items }">
+          <div v-for="item in items" :key="item.id">
+            {{ item.name }}
+          </div>
+        </template>
+      </AisHits>
       <AisStats>
         <template #default="{ nbHits }">
           <b>{{ nbHits }}</b> {{ nbHits < 2 ? 'item' : 'items' }} </template>
@@ -62,5 +69,4 @@ const configuration = ref({
   // routing: algoliaRouter.value,
   searchClient: client,
 })
-const { getInstance } = useInstantSearch()
 </script>
