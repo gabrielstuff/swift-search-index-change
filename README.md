@@ -1,6 +1,16 @@
-# Nuxt 3 Minimal Starter
+# Nuxt Swift search federated search index change
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+The goal of this project is to show how to change the index used by instantsearch.js in order to make a federated search on :
+
+- federated_search_users
+- federated_search_companies
+
+One box to search for multiple records like in the demo here : https://federated-search.typesense.org/ and there: https://u57wjd-3000.csb.app/
+
+For this demo purpose we use the typesense instantsearch adapter and the server created by typesense.
+
+You might need to update the `./utils/index.ts` with the new adress of the server you can find there : https://federated-search.typesense.org/
+
 
 ## Setup
 
@@ -9,15 +19,6 @@ Make sure to install the dependencies:
 ```bash
 # npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -27,49 +28,5 @@ Start the development server on `http://localhost:3000`:
 ```bash
 # npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
