@@ -1,0 +1,22 @@
+{
+  "name": "nuxt",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@atoms-studio/nuxt-swiftsearch": "^0.9.0",
+    "nuxt": "3.13.1",
+    "vue": "3.5.13",
+    "vue-router": "latest"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.26.9",
+    "typesense-instantsearch-adapter": "^2.8.0"
+  }
+}
